@@ -15,7 +15,7 @@ exports.setup = function(options, seedLink) {
 };
 
 exports.up = function(db,callback) {
-  db.addColumn('taqueria', 'pagina_fb', {
+  db.addColumn('taquerias', 'pagina_fb', {
     type: 'string',
     length: 250
   }, function(err) {
@@ -24,7 +24,7 @@ exports.up = function(db,callback) {
   });
 };
 exports.down = function(db,callback) {
-  db.removeColumn('taqueria', 'pagina_fb', function(err) {
+  db.removeColumn('taquerias', 'pagina_fb', function(err) {
     if (err) return callback(err);
     return callback();
   });

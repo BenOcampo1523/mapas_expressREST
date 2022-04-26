@@ -3,7 +3,7 @@
     "driver": "mysql",
     "host": "localhost",
     "user": "root",
-    "password": "123456789",
+    "password": "",
     "database": "tacolizador",
     "multipleStatements": true
 
